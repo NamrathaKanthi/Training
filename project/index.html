@@ -1,0 +1,85 @@
+<html>
+	<body>
+		<script src="js/angular.min.js"></script>
+		<!--declaring angular module-->
+		<div ng-app ="myApp">
+		<!-- importing css files-->
+		<style type="text/css">
+				
+				@import url("css/SignIn_SignUp.css");
+				
+				@import url("css/useraccount.css");
+		</style>
+		<!--importing script file-->	
+		<script src="js/Backend.js"></script>
+		<!--definging controller-->
+		<div ng-controller = "mainCtrl">
+		<!-- button for adding employee-->
+			<input type = "button" ng-click="addemployee()" value = "addEmployee">
+			<div ng-show = "showdetails">
+			<!-- showing details of employee-->
+				<input type = "text" placeholder = "EmployeeNO" ng-model="number" /><br><br>
+				<input type = "text" placeholder = "EmployeeName" ng-model="name"/><br><br>
+				<input type = "text" placeholder = "Experience" ng-model="experience"/><br><br>
+				<input type = "text" placeholder = "Designation" ng-model="designation" /><br><br>
+				<input type = "text" placeholder = "DOB" ng-model="dob" /><br>
+				<input type = "button" value="save" ng-click="save()" /><br>
+			</div>	
+			<!-- button for importing csv into json-->
+			<div>
+			<input type="file" file-reader="fileContent" accept=".csv">
+			
+			<input type = "button" ng-click = "convertingtoJSON()" value = "UPLOAD" ng-model="fileContent">
+			</div>
+			<!-- button for exporting the file into csv-->
+			<input type = "button"  value = "Export" ng-click="opencsv()">
+			<!-- defining table to display employee details-->
+			<table>
+			<!-- defining table header-->
+                <thead style = "maring-top:150px">
+                    <tr>
+                        <th>EmployeeNO:</th>
+                        <th>EmployeeName:</th>
+                        <th>Experience:</th>
+                        <th>Designation:</th>
+                        <th>DOB</th>
+						
+						
+                    </tr>
+                </thead>
+				<!-- defining table body-->
+			<tbody>
+				<tr ng-repeat = 'y in EmployeeList' style="color:black;font-size:20px">
+					<td>
+						<div ng-hide="viewField">{{y.ENO}}</div>
+						<div ng-show="modifyField"><input type="text" placeholder = "EmployeeNO" ng-model="y.ENO" /></div>
+					</td>
+					<td>
+						<div ng-hide="viewField">{{y.EName}}</div>
+						<div ng-show="modifyField"><input type="text"  placeholder = "EmployeeName" ng-model="y.EName" /></div>
+					</td>
+					<td>
+						<div ng-hide="viewField">{{y.Experience}}</div>
+						<div ng-show="modifyField"><input type="text" placeholder = "Experience" ng-model="y.Experience" /></div>
+					</td>
+					<td>
+						<div ng-hide="viewField">{{y.designation}}</div>
+						<div ng-show="modifyField"><input type="text" placeholder = "Designation" ng-model="y.designation" /></div>
+					</td>
+					<td>
+						<div ng-hide="viewField">{{y.Dob}}</div>
+						<div ng-show="modifyField"><input type ="text" placeholder = "DOB" ng-model="y.Dob" />	
+						</div>
+					</td>
+					<td>
+					<button ng-hide="viewField" ng-click="modify(y)">Modify</button>
+						<button ng-show="modifyField" ng-click="update(y)">Update</button>
+						<button ng-hide="viewField" ng-click="deletedata()">Remove</button>
+					</td>
+				</tr>
+			</tbody>
+			</table>
+		</div>
+		</div>
+	</body>
+</html>

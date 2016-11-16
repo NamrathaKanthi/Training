@@ -1,0 +1,102 @@
+#player1btn {
+	margin-top:10px;
+	margin-left:20px;
+}
+#player2btn {
+	margin-top:10px;
+	margin-left: :10px;
+}
+#player1div {
+	background-color:52a552;
+	height:50px;
+	margin-top:40px;
+}
+#player2div {
+	background-color:428bca;
+	height:50px;
+	margin-left:10px;
+	margin-top:40px;
+}
+#maindiv1 {
+	background-color:428bca
+	height:100px;
+	margin-top:20px;
+}
+#btn {
+	margin-top:30px;
+	margin-left:120px;
+}
+.dispaly {
+	color:black;
+	height:50px;
+	font-size:20px;
+}
+#maindiv2 {
+	background-color:52a552;
+	height:100px;
+	margin-top:20px;
+}
+#btn1 {
+	margin-top:30px;
+	margin-left:120px;
+}
+.dispaly1 {
+	color:black;
+	height:50px;
+	font-size:20px;
+}
+
+#maindiv3 {
+	background-color:52a552;
+	height:100px;
+	margin-top:10px;
+}
+#btn2 {
+	margin-top:30px;
+	margin-left:120px;
+}
+.dispaly2 {
+	color:black;
+	height:50px;
+	font-size:20px;
+
+}
+#maindiv4 {
+	background-color:428bca;
+	height:100px;
+	margin-top:10px;
+
+}
+
+#btn3 {
+	margin-top:30px;
+	margin-left:120px;
+
+}
+.dispaly3 {
+	color:black;
+	height:50px;
+	font-size:20px;
+}
+.active {
+	background-color:black;
+	color:white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

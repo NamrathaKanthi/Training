@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+		<script src = "js/backend.js"></script>
+		<style>
+			@import url("css/styling.css");
+		</style>
+	</head>
+	<body>
+		<div>
+			<ul>
+			  <li><a href="index.html">Home</a></li>
+			  <li style = "float:right"><a href="html/Frozen.html">Frozen</a></li>
+			  <li style = "float:right"><a href="html/Flintstones.html">Flintstones</a></li>
+			  <li style = "float:right"><a href="html/Findingnemo.html">Findingnemo</a></li>
+			</ul>
+		</div>
+		<div class="w3-content w3-display-container" style = "margin-top:200px">
+			<a href="html/Frozen.html"><input type = "image" class="mySlides" src = "images/4.jpg" style = "margin-top:100px;margin-left:380px"></a>
+			<a href="html/Flintstones.html"><input type = "image" class="mySlides" src = "images/5.jpg" style = "margin-top:100px;margin-left:380px"></a>
+			<a href="html/Findingnemo.html"><input type = "image" class="mySlides"  src = "images/6.jpg" style = "margin-top:100px;margin-left:380px"></a>
+			<div>
+			  <a class="w3-btn-floating w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
+			  <a class="w3-btn-floating w3-display-right" onclick="plusDivs(1)">&#10095;</a>
+			</div>
+			<div style="text-align:center">
+			  <span class="dot" onclick="currentSlide(1)"></span> 
+			  <span class="dot" onclick="currentSlide(2)"></span> 
+			  <span class="dot" onclick="currentSlide(3)"></span> 
+			</div>
+		</div>
+		
+	</body>
+</html>

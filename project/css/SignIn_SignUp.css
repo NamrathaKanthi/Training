@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* CSS Document */
+
+input[type="text"], input[type="password"]{
+	background-color: #e5e5e5;
+	border: solid;
+	border-radius: 10px; /*-------radius of curve ness of border---------*/
+	color: #5a5656;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;  /*-------font style-----*/
+	font-size: 14px;
+	height: 50px; /*--height of box--*/
+	padding: 10px 10px;
+	margin : 10px;
+	width: 300px;  /*-----width of box-----*/
+}
+input[type="submit"] {
+	background-color: #008dde;
+	border: none;
+	border-radius: 3px;
+	color: #f4f4f4;
+	cursor: pointer;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	height: 50px;
+	text-transform: uppercase;
+	width: 300px;
+	margin:10px;
+	padding: 10px 10px;
+	text-align:center;
+	font-size:25px;
+	font-weight:bold;
+}				
+ 
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+	hover {
+	background-color:#CCC;
+	color:#000;
+	}
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+
+
+
+			
+
