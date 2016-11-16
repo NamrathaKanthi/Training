@@ -1,0 +1,37 @@
+input[type="text"]{
+	background-color: #e5e5e5;
+	border: solid;
+	border-radius: 10px; /*-------radius of curve ness of border---------*/
+	color: #5a5656;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;  /*-------font style-----*/
+	font-size: 14px;
+	height: 50px; /*--height of box--*/
+	padding: 10px 10px;
+	margin : 10px;
+	width: 300px;  /*-----width of box-----*/
+}
+/*input[type="button"]*/
+#btn{
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	font-size: 25px;
+	font-weight: bold;
+	text-align:center;
+	border-radius: 3px;                                                     
+	background-color: #32cd32;
+	padding: 10px 10px;
+	height: auto;
+	width: 300px;
+	border: none;
+	margin-top:10px;
+	-webkit-transition-duration: 0.6s;
+    transition-duration: 0.6s;
+	text-transform: uppercase;
+	color : #f4f4f4;
+}
+#dispaly { 
+	text-align: center;
+	height: auto;
+	color:blue;
+	margin-left: 200px;
+	width : 100px;
+}
