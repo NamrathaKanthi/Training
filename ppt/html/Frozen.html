@@ -1,24 +1,140 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
-	<!--<script src = "js/backend.js">-->
-	
 		<style type ="text/css">
 			@import url("../css/styling.css");
 		</style>
+		<title>Frozen</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	</head>
 	<body>
-		<div style="width:100%;position:absolute">
-			<ul>
-			  <li><a href="../index.html">Home</a></li>
-			  <li style = "float:right"><a href="Frozen.html">Frozen</a></li>
-			  <li style = "float:right"><a href="Flintstones.html" >Flintstones</a></li>
-			  <li style = "float:right"><a href="FindingNemo.html">FindingNemo</a></li>
-			</ul>
-			<!--<input type = "image" src = "../images/4.jpg" style = "margin-top:100px;margin-left:380px">-->
-			
-			<embed style="margin-left:250px" width="400" height="300" src="https://www.youtube.com/embed/-WdC4DaYIeQ">
+		<nav id="myNavbar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+						<span class="sr-only"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="../index.html">Home</a>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="navbarCollapse">
+					<ul class="nav navbar-nav">
+						<li><a href="Frozen.html"><img src="../images/10.jpg" style="height:50px;width:50px;">Frozen</a></li>
+					  <li><a href="Flintstones.html" ><img src="../images/9.png" style="height:50px;width:50px;">Flintstones</a></li>
+					  <li><a href="FindingNemo.html"><img src="../images/8.jpg" style="height:50px;width:50px;">FindingNemo</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container">
+		<!-- Trigger the modal with a button -->
+			<div style="height:50px;width:20px;">
+				<iframe  style = "margin-top:100px;margin-left:50px" src="https://www.youtube.com/embed/-WdC4DaYIeQ">
+				</iframe>
+			</div>
+			<div style="height:200px;width:200px;">
+				<input type="button" data-target="#myModal" data-toggle="modal" style = "margin-top:50px;margin-left:50px;background-color:transparent;height:152px;width:302px;">
+			</div>
 
+			<!-- Modal -->
+			<div class="modal fade" id="myModal" role="dialog">
+				<div class="modal-dialog">
+    
+				<!-- Modal content-->
+					<div class="modal-content">
+						<div class="modal-header">
+							<h2>Enjoy the video</h2>
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+          
+						</div>
+						<div class="modal-body">
+						  <iframe style="margin-left:50px;" width="420" height="345" src="https://www.youtube.com/embed/-WdC4DaYIeQ">
+							</iframe>
+						</div>
+						<div class="modal-footer">
+						  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+      
+				</div>
+			</div>
+  
+  
+  
+		<div class="container">
+  
+			<!-- Trigger the modal with a button -->
+  
+			<div style="height:50px;width:20px;">
+				<iframe  style = "margin-top:100px;margin-left:50px" src="https://www.youtube.com/embed/L0MK7qz13bU">
+				</iframe>
+			</div>
+			<div style="height:200px;width:200px;">
+					<input type="button" data-target="#myModal2" data-toggle="modal" style = "margin-top:50px;margin-left:50px;background-color:transparent;height:152px;width:302px;">
+			</div>
+			<!-- Modal -->
+			<div class="modal fade" id="myModal2" role="dialog">
+				<div class="modal-dialog">
+				<!-- Modal content-->
+					<div class="modal-content">
+						<div class="modal-header">
+							<h2>Enjoy the video</h2>
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+          
+						</div>
+						<div class="modal-body">
+						  <iframe style="margin-left:50px;" width="420" height="345" src="https://www.youtube.com/embed/L0MK7qz13bU">
+							</iframe>
+						</div>
+						<div class="modal-footer">
+						  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
+  
+		<div class="container">
+			<!-- Trigger the modal with a button -->
+  
+			<div style="height:50px;width:20px;">
+				<iframe  style = "margin-top:100px;margin-left:50px" src="https://www.youtube.com/embed/EgMN0Cfh-aQ">
+				</iframe>
+			</div>
+			<div style="height:200px;width:200px;">
+					<input type="button" data-target="#myModal3" data-toggle="modal" style = "margin-top:50px;margin-left:50px;background-color:transparent;height:152px;width:302px;">
+			</div>
+			<!-- Modal -->
+			<div class="modal fade" id="myModal3" role="dialog">
+				<div class="modal-dialog">
+    
+				<!-- Modal content-->
+					<div class="modal-content">
+						<div class="modal-header">
+							<h2>Enjoy the video</h2>
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+          
+						</div>
+						<div class="modal-body">
+							<iframe style="margin-left:50px;" width="420" height="345" src="https://www.youtube.com/embed/EgMN0Cfh-aQ">
+							</iframe>
+						</div>
+						<div class="modal-footer">
+						  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+      
+				</div>
+			</div>
+		</div>
+
 	</body>
 </html>

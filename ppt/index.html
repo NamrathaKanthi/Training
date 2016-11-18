@@ -1,36 +1,74 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-		<script src = "js/backend.js"></script>
+		<title>
+			Presentation
+		</title>
 		<style>
-			@import url("css/styling.css");
-		</style>
+			.carousel-inner > .item > img,
+			.carousel-inner > .item > a > img {
+			width: 70%;
+			margin: auto;
+			}
+ 		</style>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src = "js/backend.js"></script>
+			<style>
+				@import url("css/styling.css");
+			</style>
 	</head>
 	<body>
-		<div>
-			<ul>
-			  <li><a href="index.html">Home</a></li>
-			  <li style = "float:right"><a href="html/Frozen.html">Frozen</a></li>
-			  <li style = "float:right"><a href="html/Flintstones.html">Flintstones</a></li>
-			  <li style = "float:right"><a href="html/Findingnemo.html">Findingnemo</a></li>
-			</ul>
-		</div>
-		<div class="w3-content w3-display-container" style = "margin-top:200px">
-			<a href="html/Frozen.html"><input type = "image" class="mySlides" src = "images/4.jpg" style = "margin-top:100px;margin-left:380px"></a>
-			<a href="html/Flintstones.html"><input type = "image" class="mySlides" src = "images/5.jpg" style = "margin-top:100px;margin-left:380px"></a>
-			<a href="html/Findingnemo.html"><input type = "image" class="mySlides"  src = "images/6.jpg" style = "margin-top:100px;margin-left:380px"></a>
+		<div class="row">
 			<div>
-			  <a class="w3-btn-floating w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
-			  <a class="w3-btn-floating w3-display-right" onclick="plusDivs(1)">&#10095;</a>
+				<ul>
+				  <li><a href="index.html">Home</a></li>
+				  <li style = "float:right"><a href="html/Frozen.html"><img src="images/10.jpg" style="height:50px;width:50px;">Frozen</a></li>
+				  <li style = "float:right"><a href="html/Flintstones.html"><img src="images/9.png" style="height:50px;width:50px;">Flintstones</a></li>
+				  <li style = "float:right"><a href="html/Findingnemo.html"><img src="images/8.jpg" style="height:50px;width:50px;">Findingnemo</a></li>
+				</ul>
 			</div>
-			<div style="text-align:center">
-			  <span class="dot" onclick="currentSlide(1)"></span> 
-			  <span class="dot" onclick="currentSlide(2)"></span> 
-			  <span class="dot" onclick="currentSlide(3)"></span> 
+			<div class="container">
+				<div id="myCarousel" class="carousel slide"  data-ride="carousel">
+				<!-- Indicators -->
+					<ol class="carousel-indicators" style="margin-left:30px;">
+					  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					  <li data-target="#myCarousel" data-slide-to="1"></li>
+					  <li data-target="#myCarousel" data-slide-to="2"></li>
+					  
+					</ol>
+
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner" role="listbox">
+		      
+
+						<div class="item active">
+							<a href="html/Frozen.html"><input type ="image" src ="images/4.jpg" style = "margin-left:150px;height:350px;"></a>
+						</div>
+		    
+						<div class="item">
+							<a href="html/Flintstones.html"><input type ="image" src="images/5.jpg" style = "margin-left:150px;height:350px;"></a>
+						</div>
+
+						<div class="item">
+							<a href="html/Findingnemo.html"><input type = "image" src="images/6.jpg" style = "margin-left:150px;height:350px;width:650px;"></a>
+						</div>
+					</div>
+
+					<!-- Left and right controls -->
+					<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+					  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					  <span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+					  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					  <span class="sr-only">Next</span>
+					</a>
+				</div>
 			</div>
 		</div>
-		
 	</body>
 </html>

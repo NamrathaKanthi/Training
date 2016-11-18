@@ -4,7 +4,9 @@ $(document).ready(function() {
 				$("#dispaly").append("<p>"+arr[ictr]+"</p>");
 			}
 			$("#btn").click(function() {
-				var array = $("#demo").val();
+				var array = prompt("please enter a value");
+				if(array != "") {
+				//var array = $("#demo").val();
 				var newarray = array.split(","); 
 				for(var ictr=0;ictr<newarray.length;ictr++) {
 					var flag = true;
@@ -16,6 +18,10 @@ $(document).ready(function() {
 					if(flag) {
 						$("#dispaly").append("<p>"+newarray[ictr]+"</p>");
 					}
+				}
+				}
+				else {
+					alert("enter a value");
 				}
 			});
 		});

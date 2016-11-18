@@ -1,63 +1,58 @@
 <html>
 	<head>
-		<title>
-			tictac
-		</title>
-		<style>
-			@import url("css/styles.css");
-		</style>
-		
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<script src = "js/backend.js"></script>
-	</head>
+    <title>
+      tictac
+    </title>
+    <style>
+      @import url("css/styles.css");
+    </style>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src = "js/backend.js"></script>
+  </head>
 	<body>
-	<input type = "button" value="startgame" id="startgame">
-		<div class="row">
+    <div class="row">
   
-			<div class="col-md-offset-4 col-md-2" style = "background-color :52a552;height:50px;
-			margin-top:40px;">
-			  	<div class="active" id="player1"  style = "margin-top:10px;margin-left:20px;">
-			  		<p>player1</p>
-			  	</div>
-			</div>
-			<div class="col-md-2" style = "background-color:428bca;height:50px;margin-left:10px;
-			margin-top:40px;">
-			  	<div id="player2" style = "margin-top:10px;margin-left: :10px;">
-			  		<p>player2</p>
-			  	</div>
-			</div>
-		</div>
-		<div class="row">
-		  	<div class="col-md-offset-2 col-md-4" style="background-color:428bca;height:100px;margin-top:20px">
-		  		<div id = "maindiv">
-					<div id = "firstdiv" >
-						<input type = "button" id ="btn" class="btn btn-warning" value = "clickme" style="margin-top:30px;margin-left:120px;">
-						<div class= "dispaly" style ="color:black;height:50px;font-size: 20px;"></div>
-					</div>
-		  		</div>
-		  	</div>
-		  	<div class="col-md-4" style = "background-color:52a552;height:100px;margin-top:20px;">
-		  		<div id = "firstdiv" >
-					<input type = "button"  id= "btn1" class="btn btn-warning" value = "clickme" style="margin-top:30px;margin-left:120px;">
-					<div class = "dispaly1" style ="color:black;height:50px;font-size:20px;"></div>
-				</div>
-
-		  	</div>
-		  	<div class="col-md-offset-2 col-md-4" style="background-color:52a552;height:100px;margin-top:10px;">
-		  		<div id = "firstdiv1" >
-					<input type = "button"  id= "btn2" class="btn btn-warning" value = "clickme" style="margin-top:30px;margin-left:120px;">
-					<div class = "dispaly2" style = "color:black;height:50px;font-size:20px;"></div>
-				</div>
-		  	</div>
-		  	<div class="col-md-4" style ="background-color :428bca;height:100px;margin-top:10px;">
-		  		<div id = "firstdiv1" >
-					<input type = "button"  id= "btn3" class="btn btn-warning" value = "clickme" style="margin-top:30px;margin-left:120px;">
-					<div class = "dispaly3" style ="color:black;height:50px;font-size:20px;"></div>
-				</div>
-		  	</div>
-		</div>
+      <div class="col-md-offset-4 col-md-2" style = "background-color :52a552;height:50px;
+      margin-top:40px;">
+          <input type = "button" class="active" value="player1" id="player1"  style = "margin-top:10px;margin-left:35px;">
+      </div>
+      <div class="col-md-2" style = "background-color:428bca;height:50px;margin-left:10px;
+      margin-top:40px;">
+          <input type="button" id="player2" value="player2" style="margin-top:10px;margin-left:35px;">
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-md-offset-3 col-md-2" id="div1" style="background-color:428bca;height:100px;margin-top:20px">
+          <p id ="btn" class="btn btn-warning maindiv" value = "clickme" style="margin-top:30px;margin-left:40px;">clickme</p>
+        </div>
+		<div class="col-md-2" id="div2" style = "background-color:52a552;height:100px;margin-top:20px;">
+          <p id= "btn1" class="btn btn-warning maindiv" value = "clickme" style="margin-top:30px;margin-left:40px;">clickme</p>
+        </div>
+        <div class="col-md-2" id="div3" style = "background-color:428bca;height:100px;margin-top:20px;">
+          <p id= "btn2" class="btn btn-warning maindiv" value = "clickme" style="margin-top:30px;margin-left:40px;">clickme</p>
+        </div>
+        <div class="col-md-offset-3 col-md-2" id="div4" style="background-color:52a552;height:100px;margin-top:10px;">
+          <p id= "btn3" class="btn btn-warning maindiv" value = "clickme" style="margin-top:30px;margin-left:40px;">clickme</p>
+        </div>
+        <div class="col-md-2" id="div5" style ="background-color :428bca;height:100px;margin-top:10px;">
+         <p  id= "btn4" class="btn btn-warning maindiv" value = "clickme" style="margin-top:30px;margin-left:40px;">clickme</p>
+        </div>
+		<div class="col-md-2" id="div6" style ="background-color :52a552;height:100px;margin-top:10px;">
+         <p  id= "btn5" class="btn btn-warning maindiv" value = "clickme" style="margin-top:30px;margin-left:40px;">clickme</p>
+        </div>
+		<div class="col-md-offset-3 col-md-2" id="div7" style="background-color:428bca;height:100px;margin-top:10px;">
+          <p id= "btn6" class="btn btn-warning maindiv" value = "clickme" style="margin-top:30px;margin-left:40px;">clickme</p>
+        </div>
+		<div class="col-md-2" id="div8" style ="background-color :52a552;height:100px;margin-top:10px;">
+         <p  id= "btn7" class="btn btn-warning maindiv" value = "clickme" style="margin-top:30px;margin-left:40px;">clickme</p>
+        </div>
+		<div class="col-md-2" id="div9" style ="background-color :428bca;height:100px;margin-top:10px;">
+         <p  id= "btn8" class="btn btn-warning maindiv" value = "clickme" style="margin-top:30px;margin-left:40px;">clickme</p>
+        </div>
+      </div>
 	</body>
 </html>

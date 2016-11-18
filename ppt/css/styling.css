@@ -3,7 +3,7 @@
 	margin-top: 0px ;
 	padding: 0;
 	overflow: hidden;
-	background-color: SlateGrey;
+	/*background-color: SlateGrey;*/
 	}
 
 	li {
@@ -16,6 +16,8 @@
 		text-align: center;
 		padding: 14px 16px;
 		text-decoration: none;
+		margin-top: 2px;
+    	margin-left: 20px;
 	}
 
 	li a:hover, .dropdown:hover .dropbtn {
@@ -129,3 +131,8 @@
 		@media only screen and (max-width: 300px) {
 		  .prev, .next,.text {font-size: 11px}
 		}
+		
+		
+		
+		
+		
